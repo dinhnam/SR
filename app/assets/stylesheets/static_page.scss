@@ -1,0 +1,68 @@
+main{
+  display: flex;
+  flex-direction: row;
+}
+#record{
+  cursor: pointer;
+  background-color: rgb(140, 160, 226);
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  user-select: none;
+  border-radius: 5px;
+  &:hover{
+    background-color: rgb(195, 188, 238);
+  }
+}
+.bg{
+  width: 512px;
+  height: 100px;
+  background-color: aqua;
+  position: relative;
+  border-bottom: 1px solid blue;
+  border-left: 1px solid blue;
+  border-right: 1px solid blue;
+  span{
+    position: absolute;
+    bottom: 0;
+  }
+}
+#amplitude{
+  border-top: 1px solid blue;
+  z-index: 2;
+  span{
+    position: absolute;
+    top: 0;
+  }
+}
+#spectrum{
+  height: 400px;
+  width: 520px;
+  span{
+    position: absolute;
+    right: 0px;
+    bottom: -18px;
+  }
+}
+#music{
+  width: 100%;
+  #video{
+    margin-left: 100px;
+    height: 450px;
+    width: 800px;
+    iframe{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  #pathvideo{
+    margin-left: 100px;
+    width: 500px;
+  }
+  span{
+    margin: 5px;
+    padding: 5px;
+    background-color: red;
+    cursor: pointer;
+  }
+}
